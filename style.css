@@ -1,0 +1,49 @@
+.containers{
+    width: 69%;
+    margin: auto;
+    padding: 0;
+
+}
+body, html{
+
+}
+img{
+    width: 100%;
+}
+h3{
+    margin-top: 10px;
+}
+.middle{
+    background-color: black;
+    padding-top: 20px;
+}
+.footer{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.uye-ol{
+    display: none;
+}
+input{
+    padding: 10px !important;
+}
+@media screen and (max-width:994px){
+    .ticari{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .navbar-nav li {
+        margin-right: 5px;
+    }
+    .uye-ol{
+        display: block;
+    }
+}
+@media screen and (max-width:920px){
+    .col-4{
+        width: 100%;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/327330b1d9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            list-style-type: none;
+        }  
+        body{
+            background-color: black;
+        }
+        form {
+            padding: 10px 50px 30px 50px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+            width: 450px;
+            background-color: #111111;
+            
+        }
+        .conta{
+            background-color: black;
+            height: 700px;
+            display: block;
+        }
+        h2{
+            text-align: center;
+        }
+        .email-item{
+            position: absolute;
+            left: 50px;
+            top: 78px;
+            font-size: 18;
+            font-weight: bold;
+        }
+        .pass-item{
+            position: absolute;
+            left: 50px;
+            bottom: 305px;
+            font-size: 18;
+            font-weight: bold;
+        }
+        .gızle{
+          position: absolute;
+          left: 70px;
+          bottom: 210px;
+        }
+        input{
+            height: 50px;
+        }
+        .gırıs{
+            height: 50px;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+
+        }
+        .tel{
+            height: 50px;
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+            text-align: center;
+
+        }
+        .unuttum{
+          position: absolute;
+          left: 280px;
+          bottom: 210px;
+          text-decoration: underline;
+        }
+        .btn1 {
+          display: none;
+          background: transparent;
+          border: none;
+          position: absolute;
+          bottom: 265px;
+          right: 50px;
+        }
+        .btn2 {
+          background: transparent;
+          border: none;
+          position: absolute;
+          bottom: 265px;
+          right: 50px;
+        }
+        footer{
+          background-color: #212121;
+          position:relative;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: #9E9E9E;
+        }
+        .fa-brands{
+          color: #cccccc;
+        }
+        .footer-ımg{
+          width: 170px;
+          height: 50px;
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header-top Section start -->
+    <nav class="navbar navbar-expand-lg bg-warning ">   <!-- renk değiştirdik -->
+        <div class="container containers d-flex justify-content-between">
+          <div class="logo ">
+            <a class="navbar-brand" href="#"><img src="img/logo-web.svg" alt="exxen-logo"></a>
+          </div>
+          
+          <div class="navbar" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active btn bg-dark ticari text-warning rounded-0" aria-current="page" href="#">EXXENSPOR TİCARİ ÜYE OL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn ms-2 border border-dark rounded-0" href="#">Üye Girişi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-globe"></i> TR
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Espanol</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--  -->
+      <div class="container-fluid conta">
+        <form action="" class="text-white">
+            <h2 class="m-3">Üye Girişi</h2>
+            <label for="" class="email-item w-100 text-warning">E-posta</label>
+            <br>
+            <input id="email" type="email" name="" class="w-100 mb-3">
+            <br>
+            <label for="" class="pass-item text-warning">Şifre</label>
+            <br>
+            <input id="pass"type="password" name="" class="w-100 mb-2" ><br>
+            <button class="btn1"><i class="fa-regular fa-eye-slash"></i></button>
+            <button class="btn2"><i class="fa-regular fa-eye"></i></button>
+            <input type="checkbox" id="check">
+            <label for="" class="gızle">Gizle</label>
+            <label for="" class="unuttum">şifremi unuttum</label>
+            <button class="gırıs w-100 mb-4 bg-warning fs-4">Giriş yap</button><br>
+            <button class="tel w-100">Telefon numarası ile giriş yap</button>
+        </form>
+      </div>
+      <!--  -->
+      <!-- footer -->
+      <footer class="container-fluid p-3">
+        <div class="row">
+          <div class="col-2 text-center"><img src="footer-logo.svg" alt=""></div>
+          <div class="col-4">
+            <h6 class="border-bottom">Hakkımızda</h6>
+            <div class="row">
+              <div class="col-6">
+                <ul class="p-0">
+                  <li>Yardım Merkezi</li>
+                  <li>Kullanıcı Üyelik Sözleşmesi</li>
+                  <li>Çerez Politikası</li>
+                  <li>Gizlilik Politikası</li>
+                  <li>Kullanım Şartları</li>
+                  <li>Kurumsal Bilgiler</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="p-0">
+                  <li>Mesafeli Satış Sözleşmesi</li>
+                  <li>Ön Bilgilendirme Formu</li>
+                  <li>Açık Rıza Metni</li>
+                  <li>Müşteri Aydınlatma Metni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <h6 class="border-bottom">Bizi takip edin</h6>
+            <div>
+              <span><i class="fa-brands fa-facebook fs-4"></i></span>
+              <span><i class="fa-brands fa-youtube fs-4"></i></span>
+              <span><i class="fa-brands fa-twitter fs-4"></i></span>
+              <span><i class="fa-brands fa-instagram fs-4"></i></span>
+              <span><i class="fa-brands fa-tiktok fs-4"></i></span>
+            </div>
+          </div>
+          <div class="col-3">
+            <h6 class="border-bottom w-75 ">uygulamalarımız</h6>
+            <a href=""><img src="img/google-play@3x.png" alt="" class="footer-ımg my-2"></a>
+            <a href=""><img src="img/app-store-2.svg" alt="" class="footer-ımg my-2"></a>
+            <a href=""><img src="img/huawei-app-gallery@3x.png" alt="" class="footer-ımg"></a>
+
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+
+
+</body>
+</html>
