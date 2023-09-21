@@ -12,7 +12,7 @@ $(document).ready(function(){
         $(".btn1").css("display","none")
         $(".btn2").css("display","block")
         $("#pass").attr("type","password")
-        
+    
     })
     $('#check').change(function() { 
         if(this.checked) { 
